@@ -1,0 +1,169 @@
+body {
+  background-color: #ddd;
+  direction: rtl;
+  font-family: "Noto Nastaliq Urdu Draft", serif;
+}
+.icon {
+  width: 30%;
+}
+.container {
+  width: 95%;
+  height: 1000px;
+  margin-bottom: -14%;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header {
+  min-height: 100px;
+  display: inline-block;
+}
+.logo {
+  float: right;
+  width: 25%;
+  padding: 10px 50px;
+}
+header .logo img {
+  width: 100px;
+}
+
+header nav {
+  float: left;
+  width: 80%;
+}
+header nav ul {
+  margin-top: -80px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 10%;
+}
+header nav ul li {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+.content {
+  min-height: 500px;
+  max-height: 100%;
+}
+
+.content .sidebar {
+  float: right;
+  width: 25%;
+
+  margin: 1%;
+}
+.content .sidebar .widget {
+  width: 30%;
+  background-color: #c2bebe;
+  border: 1px solid #ccc;
+  text-align: center;
+  height: 285px;
+}
+.content .sidebar .widget .titel {
+  background-color: #222;
+  color: #fff;
+  padding: 5px ;
+  text-align: center;
+  /* width: 100%; */
+}
+.content .sidebar .widget .data ul {
+  line-height: 300%;
+  text-align: right;
+}
+
+.content .sidebar .widget .data {
+  text-align: center;
+}
+.content .sidebar .widget .data img {
+  max-width: 80%;
+  margin: 10px auto;
+}
+
+.content .products {
+  float: left;
+  width: 72%;
+  color: #222;
+}
+.content .products .product {
+  width: 25%;
+  margin-left: 5%;
+  float: right;
+  margin-bottom: 5%;
+}
+.content .products .product img {
+  max-width: 100%;
+}
+
+footer .info {
+  background-color: #bbb;
+}
+footer .info ul {
+  margin: 10px;
+  display: inline;
+}
+footer .info ul li {
+  margin-right: 15px;
+}
+footer .info h3 {
+  border-bottom: 1px solid #9f9292;
+  width: 12%;
+  margin-right: 15px;
+}
+footer .copyright {
+  padding: 10px 0;
+  background-color: #474747;
+  text-align: center;
+  color: #fff;
+}
+p {
+  position: relative;
+  top: 40px;
+  margin: 5%;
+}
+
+.sub-menu > li {
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 74%;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+  }
+  header .logo img {
+    margin: 0px -10%;
+  }
+  header nav {
+    margin-top: 56px;
+  }
+  .content .sidebar {
+    float: right;
+    width: 25%;
+
+    margin: 1%;
+  }
+  .content .sidebar .widget {
+    width: 75%;
+  }
+  span {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: calc(100% - 3px);
+  }
+  span {
+    font-size: 10px;
+  }
+}
